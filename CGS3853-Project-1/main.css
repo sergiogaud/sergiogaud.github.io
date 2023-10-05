@@ -1,0 +1,265 @@
+/* main.css */
+
+
+html, body {
+    background-color: #242424; /* Use the light gray color */
+    margin: 0; /* Reset margin to remove default spacing */
+    padding: 0; /* Reset padding to remove default spacing */
+}
+
+/* Top Styles */
+.top-bar {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px; /* Adjust padding */
+    text-align: center; /* Center-align the text */
+    position: fixed; /* Allows positioning of pseudo-elements */
+    width: 98%; /* Make the top bar full width */
+    z-index: 1; /* Ensure it's above the sidebar */
+    
+    /* Add a 3D or blocky effect to the background */
+    background: linear-gradient(45deg, #d40000, #9c4a4a, #0b00d7);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.top-bar h1 {
+    font-family: "Arial", sans-serif;
+    font-style: oblique;
+    font-size: 44px;
+    font-weight: bold;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* SideBar Style*/
+.sidebar {
+    background-color: #000000;
+    background: linear-gradient(45deg, #d40000, #9c4a4a, #0b00d7);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    position: fixed; /* Make it fixed at the top */
+    top: 71px; /* Adjust the top position to align with the top bar */
+    left: 0;
+    width: 98%; /* Set the sidebar to 98% width */
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: center; /* Center-align the items horizontally */
+    align-items: center; /* Center-align the items vertically */
+    z-index: 2; /* Ensure it's above the top bar */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex; /* Use flexbox to arrange list items horizontally */
+    justify-content: center; /* Center-align the list items horizontally */
+    align-items: center; /* Center-align the list items vertically */
+}
+
+.sidebar ul li {
+    margin-right: 20px; /* Adjust spacing between items */
+    font-size: 20px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #000000;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #4f4f4f;
+}
+
+/* Content Styles */
+.content {
+    padding-top: 169px;
+}
+
+/* Styling for the "About" section */
+#about {
+    background-color: #dabea2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center; /* Center content */
+}
+
+#about h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#about p {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Styling for images and descriptions */
+.image-container {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+
+.image-container figure {
+    text-align: center;
+    margin: 20px; /* Adjust margin as needed for spacing */
+    width: 200%; /* Adjust the width as needed */
+}
+
+/* Set a maximum width for the images */
+.image-container figure img {
+    max-width: 100%; /* The image will not exceed its container's width */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 20px;
+}
+
+.image-container figcaption {
+    font-size: 16px;
+    color: #dabea2;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+/* Styling for the arrow */
+.arrow-with-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.arrow {
+    font-size: 64px;
+    text-align: center;
+    margin: 20px 0;
+    color: #dabea2;
+}
+
+.arrow-text{
+    font-size: 18px;
+}
+
+/* Styling for the "Game Systems" section */
+#game-systems {
+    padding: 20px;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px; /* Adjust the gap as needed */
+}
+
+.image-container img {
+    max-width: 30%; /* Ensure images don't exceed their container's width */
+    height: auto;
+    border-radius: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 35%;
+}
+
+th, td {
+    border: 1px solid #d10000;
+    padding: 8px;
+    text-align: left;
+    color: #dabea2;
+}
+
+th {
+    background-color: #d10000;
+    font-weight: bold;
+}
+
+/* Styling for the "Resources" section */
+#resources {
+    background-color: #dabea2;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+/* Styling for the Resources */
+#resources h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+#resources ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#resources ul li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#resources a {
+    text-decoration: none;
+    color: #0073e6; /* Change the link color as needed */
+}
+
+#resources img {
+    width: 25%; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    border-radius: 20px;
+}
+
+
+/* For visited links in the "Resources" section */
+#resources a:visited {
+    color: purple;
+}
+
+
+/* Styling for the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: #0073e6; /* Change the link color as needed */
+    text-decoration: none;
+}
+
+/* Styling for visited links in the "Resources" section */
+footer a:visited {
+    color: purple;
+}
+
+/* Add this CSS to display text on the right side of the image */
+.second-page .game-card {
+    display: flex;
+    align-items: center; /* Center vertically within the card */
+    margin-bottom: 20px; /* Add margin between game cards */
+}
+
+.second-page .game-content {
+    display: flex;
+    flex-direction: row; /* Horizontal layout */
+    align-items: center; /* Center vertically within the content */
+}
+
+.second-page .game-image {
+    width: 200px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintain the aspect ratio */
+    margin-right: 20px; /* Add spacing between image and text */
+}
+
+/* Adjust the size and color of the text inside the game cards */
+.second-page .game-card p {
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #dabea2; /* Adjust the text color as needed */
+}
+
+
