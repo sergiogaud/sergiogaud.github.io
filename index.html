@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link id='csslink' rel="stylesheet" href="main.css" />
+
+    <script>
+        function toggleCSS() {
+            // Obtains the <link> element that links to the CSS (by using its id).
+            var currentCSS = document.getElementById('csslink');
+    
+            // Change the value of the href attribute to change the CSS file.
+            if (currentCSS.getAttribute('href') == 'main.css') {
+                currentCSS.setAttribute('href', 'alternate.css');
+            } else {
+                currentCSS.setAttribute('href', 'main.css');
+            }
+        }
+    </script>
+</head>
+<body class="first-page">
+    <header class="top-bar">
+        <h1>Exploring Nintendo's Gaming Legacy: Consoles and Iconic Games</h1>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#game-systems">Game Systems</a></li>
+            <li><a href="#resources">Resources</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button onclick="toggleCSS()">Switch Style</button></li>
+        </ul>
+    </div>
+    <div class="content">
+        <section id="about">
+            <h2>About</h2>
+            <p>Nintendo has undeniably been one of the most influential gaming companies in history and a household name. 
+                Founded in 1889 in Kyoto, Japan, the company initially focused on the production and distribution of Japanese 
+                playing cards. Little did they know that they would later become one of the world's largest video game companies, 
+                thanks to groundbreaking console releases like the Nintendo Entertainment System (NES), Game Boy, and Nintendo Switch.
+                 Nintendo has also produced some of the most iconic and beloved games in history, including Super Mario Bros., The 
+                 Legend of Zelda, and Pokémon, all of which have left an lasting mark on the gaming industry. 
+            </p>
+        </section>
+        
+        <div class="image-container">
+            <!-- First Image and Description -->
+            <figure>
+                <img src="jason-leung-ZV7lnfyQLmA-unsplash.jpg" alt="Image 1">
+                <figcaption>Nintendo Entertainment System (NES)</figcaption>
+            </figure>
+        
+            <!-- Arrow -->
+            <div class="arrow">&#8594;
+                <div class="arrow">&#8594</div>
+                <div class="arrow-text"> 32 years</div>
+            </div>
+        
+            <!-- Second Image and Description -->
+            <figure>
+                <img src="yasin-hasan-PU1uYnZrAL0-unsplash.jpg" alt="Image 2">
+                <figcaption>Nintendo Switch</figcaption>
+            </figure>
+        </div>
+        <section id="game-systems">
+            <div class="image-container">
+                <img src="ravi-palwe-VP2FtqdYUkY-unsplash.jpg" alt="Game Boy">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Console</th>
+                            <th>Release Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nintendo Entertainment System (NES)</td>
+                            <td>1985</td>
+                        </tr>
+                        <tr>
+                            <td>Game Boy</td>
+                            <td>1989</td>
+                        </tr>
+                        <tr>
+                            <td>Super Nintendo Entertainment System (SNES)</td>
+                            <td>1991</td>
+                        </tr>
+                        <tr>
+                            <td>Nintendo 64</td>
+                            <td>1996</td>
+                        </tr>
+                        <tr>
+                            <td>GameCube</td>
+                            <td>2001</td>
+                        </tr>
+                        <tr>
+                            <td>Nintendo DS</td>
+                            <td>2004</td>
+                        </tr>
+                        <tr>
+                            <td>Wii</td>
+                            <td>2006</td>
+                        </tr>
+                        <tr>
+                            <td>Wii U</td>
+                            <td>2012</td>
+                        </tr>
+                        <tr>
+                            <td>Nintendo Switch</td>
+                            <td>2017</td>
+                        </tr>
+                        <tr>
+                            <td>Nintendo Switch Lite</td>
+                            <td>2019</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <img src="erik-mclean-EdUYo2Y435s-unsplash.jpg" alt="Nintendo Switch Docked">
+            </div>
+        </section>
+        <section id="resources">
+            <h2>Resources</h2>
+            <p>
+                Click <a href="popularGames.html" target="_blank">here</a> to learn more about some of Nintendo's most popular games. <br>
+                Below are a few more resources to discover more about Nintendo and their products.
+            </p>
+            <ul>
+                <li><a href="https://www.nintendo.com/" target="_blank">Nintendo's Official Website</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Nintendo" target="_blank">Nintendo's Wikipedia Page</a></li>
+                <li><a href="https://www.nintendo.com/store/" target="_blank">My Nintendo Store</a></li>
+            </ul>
+            <img src="Nintendo.svg.png" alt="Nintendo Logo">
+        </section>
+        <footer id="contact">
+            <p>&copy; 2023 Exploring Nintendo's Gaming Legacy, Sergio Gaud<br>
+                Images courtesy of <a href="https://www.unsplash.com" target="_blank">Unsplash.</a>
+            </p>
+        </footer>
+    </div>
+</body>
+</html>
